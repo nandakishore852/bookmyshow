@@ -1,0 +1,331 @@
+	<html>
+	 <head>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">		
+	 	<title>....Book MyShow.com....!</title>
+	 	
+
+	 	<style>
+
+	 		.bg
+	 		{
+	 			background-image: url("theater.jpg");
+	 			background-repeat: no-repeat;
+	 			background-size: 1400px 700px;
+	 			background-attachment: fixed;
+	 		}
+
+	 	
+	 		label
+	 		 { 
+	 		  float: left;
+	 		 }
+
+	 		span::after
+	 		  {
+	 		  	content: "*"; 
+	 		  	color:red;
+	 		  }
+
+	 		span
+	 		  { 
+	 		  	display: block; color: white;
+	 		  }
+
+	 		  td.nanda
+	 		  {
+	 		  	height: 40px;
+	 		  	width: 40px;
+	 		  	border: 4px solid orange;
+	 		  	background-color: white;
+	 		  	border-radius: 5px;
+	 		  	cursor:pointer;
+              }
+
+              td.disable
+	 		  {
+	 		  	height: 40px;
+	 		  	width: 40px;
+	 		  	border: 4px solid orange;
+	 		  	background-color: white;
+	 		  	border-radius: 5px;
+	 		  	cursor:not-allowed;
+              }
+
+              td:hover{
+              	border-color: black;
+              }
+
+         
+
+	 	</style>
+
+	 	<!--<script>
+
+	 		function setColor(btn, color){
+    		var a=1;
+    		var b = document.getElementById(btn);
+    		if (a == 0){
+        		b.style.backgroundColor = "#047500"
+        		a=1;        
+    		}
+    		else{
+        		b.style.backgroundColor = "#047500"
+        		a=0;
+    		}
+			}
+
+			function nanda(){
+				document.getElementById('image').src='green.png'
+			}
+	 	
+	 	</script>-->
+
+	 </head>
+
+	<body class="bg">
+		
+		<p style="color:white;text-align:center;font-size:1.8rem; line-height: 0.8em;" sans-serif><b>MOVIE SEAT SELECTION</b></p>
+		<center>
+		<div style="background-color:hsla(25, 8%, 22%, 0.9); width:750px; height:760px;">
+		<p style="color:#E05A16; text-align: center; padding: 10px; font-size:1rem;">Fill The Required Details Below And Select Your Seats</p>
+		<label>
+			<span>Name</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="text" style="height: 40px; width: 350px; color:white; size: 10px; background-color: hsla(25, 8%, 22%, 0.9);" maxlength="30" autofocus>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	    </label>
+	    <label>
+	        <span>Number of Seats</span>&nbsp&nbsp&nbsp
+	        <input type="number" style="height: 40px; width: 200px; color:white; text-align:center; background-color: hsla(25, 8%, 22%, 0.9);">
+	    </label><br><br><br><br>
+	    <input type="submit" value="Start Selecting" style="background-color:white; height:5vh; width:10vw;font-size:0.9em;border-radius:10px; cursor:pointer;"><br><br>
+
+	    <table>
+	    	<tr>
+	    		<td> <img src="green.png" style="height: 13px; width: 12px;"> </td>
+	    		<td></td>
+	    		<td style="color: white">Selected Seat</td>
+	    		<td></td>
+	    		<td></td>
+	    		<td></td>
+	    		<td> <img src="gray.jfif" style="height: 13px; width: 12px;"> </td>
+	    		<td></td>
+	    		<td style="color: white">Reserved Seat</td>
+	    		<td></td>
+	    		<td></td>
+	    		<td></td>
+	    		<td> <img src="white.png" style="height: 13px; width: 12px;"> </td>
+	    		<td></td>
+	    		<td style="color: white">Empty Seat</td>
+	    	</tr>
+	    </table><br>
+	    <div>
+	    	<table cellspacing="5">
+	    		<tr>
+	    			<td></td>
+	    			<td style="width: 10px;"></td>
+	    			<td style="color: white; text-align: center;">1</td>
+	    			<td style="color: white; text-align: center;">2</td>
+	    			<td style="color: white; text-align: center;">3</td>
+	    			<td style="color: white; text-align: center;">4</td>
+	    			<td style="color: white; text-align: center;">5</td>
+	    			<td style="width: 30px;"></td>
+
+	    			<td style="color: white; text-align: center;">7</td>
+	    			<td style="color: white; text-align: center;">8</td>
+	    			<td style="color: white; text-align: center;">9</td>
+	    			<td style="color: white; text-align: center;">10</td>
+	    			<td style="color: white; text-align: center;">11</td>
+	    			<td style="color: white; text-align: center;">12</td>
+	    		</tr>
+
+	    		<tr>
+	    			<td style="color: white; text-align: center; padding: 10px;">A</td>
+	    			<td style="width: 10px;"></td>
+	    			<td class="disable"><img src="gray.jfif" style="height:30px;width:40px;" title="This seat is reserved ¯\_(ツ)_/¯"></td>
+	    			<td class="nanda"><img  id="b" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('b').src='green.png'"></td>
+	    			<td class="nanda"><img  id="c" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('c').src='green.png'"></td>
+	    			<td class="nanda"><img  id="d" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('d').src='green.png'"></td>
+	    			<td class="nanda"><img  id="e" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('e').src='green.png'"></td>
+	    			<td style="width: 30px;"></td>
+
+	    			<td class="nanda"><img  id="f" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('f').src='green.png'"></td>
+	    			<td class="nanda"><img  id="g" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('g').src='green.png'"></td>
+	    			<td class="nanda"><img  id="h" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('h').src='green.png'"></td>
+	    			<td class="nanda"><img  id="i" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('i').src='green.png'"></td>
+	    			<td class="nanda"><img  id="j" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('j').src='green.png'"></td>
+	    			<td class="nanda"><img  id="k" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('k').src='green.png'"></td>
+	    		</tr>
+
+	    		<tr>
+	    			<td style="color: white; text-align: center; padding: 10px;">B</td>
+	    			<td style="width: 10px;"></td>
+	    			<td class="nanda"><img  id="l" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('l').src='green.png'"></td>
+	    			<td class="nanda"><img  id="m" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('m').src='green.png'"></td>
+	    			<td class="nanda"><img  id="n" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('n').src='green.png'"></td>
+	    			<td class="nanda"><img  id="o" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('o').src='green.png'"></td>
+	    			<td class="nanda"><img  id="p" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('p').src='green.png'"></td>
+	    			<td style="width: 30px;"></td>
+
+	    			<td class="nanda"><img  id="q" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('q').src='green.png'"></td>
+	    			<td class="nanda"><img  id="r" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('r').src='green.png'"></td>
+	    			<td class="nanda"><img  id="s" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('s').src='green.png'"></td>
+	    			<td class="nanda"><img  id="t" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('t').src='green.png'"></td>
+	    			<td class="nanda"><img  id="u" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('u').src='green.png'"></td>
+	    			<td class="nanda"><img  id="v" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('v').src='green.png'"></td>
+	    		</tr>
+
+	    		<tr>
+	    			<td style="color: white; text-align: center; padding: 10px;">C</td>
+	    			<td style="width: 10px;"></td>
+	    			<td class="nanda"><img  id="w" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('w').src='green.png'"></td>
+	    			<td class="nanda"><img  id="x" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('x').src='green.png'"></td>
+	    			<td class="nanda"><img  id="y" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('y').src='green.png'"></td>
+	    			<td class="nanda"><img  id="z" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('z').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ab" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ab').src='green.png'"></td>
+	    			<td style="width: 30px;"></td>
+
+	    			<td class="nanda"><img  id="ac" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ac').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ad" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ad').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ae" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ae').src='green.png'"></td>
+	    			<td class="nanda"><img  id="af" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('af').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ag" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ag').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ah" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ah').src='green.png'"></td>
+	    		</tr>
+
+	    		<tr>
+	    			<td style="color: white; text-align: center; padding: 10px;">D</td>
+	    			<td style="width: 10px;"></td>
+	    			<td class="nanda"><img  id="ai" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ai').src='green.png'"></td>
+	    			<td class="nanda"><img  id="aj" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('aj').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ak" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ak').src='green.png'"></td>
+	    			<td class="nanda"><img  id="al" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('al').src='green.png'"></td>
+	    			<td class="nanda"><img  id="am" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('am').src='green.png'"></td>
+	    			<td style="width: 30px;"></td>
+
+	    			<td class="nanda"><img  id="an" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('an').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ao" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ao').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ap" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ap').src='green.png'"></td>
+	    			<td class="nanda"><img  id="aq" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('aq').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ar" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ar').src='green.png'"></td>
+	    			<td class="nanda"><img  id="as" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('as').src='green.png'"></td>
+	    		</tr>
+
+	    		<tr>
+	    			<td style="color: white; text-align: center; padding: 10px;">E</td>
+	    			<td style="width: 10px;"></td>
+	    			<td class="nanda"><img  id="at" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('at').src='green.png'"></td>
+	    			<td class="nanda"><img  id="au" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('au').src='green.png'"></td>
+	    			<td class="nanda"><img  id="av" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('av').src='green.png'"></td>
+	    			<td class="nanda"><img  id="aw" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('aw').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ax" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ax').src='green.png'"></td>
+	    			<td style="width: 30px;"></td>
+
+	    			<td class="nanda"><img  id="ay" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ay').src='green.png'"></td>
+	    			<td class="nanda"><img  id="az" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('az').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ba" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ba').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bb" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bb').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bc" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bc').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bd" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bd').src='green.png'"></td>
+	    		</tr>
+
+	    		<tr style="height: 30px;">
+	    			
+	    		</tr>
+
+	    		<tr>
+	    			<td style="color: white; text-align: center; padding: 10px;">F</td>
+	    			<td style="width: 10px;"></td>
+	    			<td class="nanda"><img  id="be" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('be').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bf" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bf').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bg" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bg').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bh" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bh').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bi" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bi').src='green.png'"></td>
+	    			<td style="width: 30px;"></td>
+
+	    			<td class="nanda"><img  id="bj" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bj').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bk" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bk').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bl" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bl').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bm" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bm').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bn" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bn').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bo" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bo').src='green.png'"></td>
+	    		</tr>
+
+	    		<tr>
+	    			<td style="color: white; text-align: center; padding: 10px;">G</td>
+	    			<td style="width: 10px;"></td>
+	    			<td class="nanda"><img  id="bp" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bp').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bq" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bq').src='green.png'"></td>
+	    			<td class="nanda"><img  id="br" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('br').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bs" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bs').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bt" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bt').src='green.png'"></td>
+	    			<td style="width: 30px;"></td>
+
+	    			<td class="nanda"><img  id="bu" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bu').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bv" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bv').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bw" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bw').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bx" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bx').src='green.png'"></td>
+	    			<td class="nanda"><img  id="by" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('by').src='green.png'"></td>
+	    			<td class="nanda"><img  id="bz" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('bz').src='green.png'"></td>
+	    		</tr>
+
+	    		<tr>
+	    			<td style="color: white; text-align: center; padding: 10px;">H</td>
+	    			<td style="width: 10px;"></td>
+	    			<td class="nanda"><img  id="ca" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ca').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cb" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cb').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cd" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cd').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ce" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ce').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cf" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cf').src='green.png'"></td>
+	    			<td style="width: 30px;"></td>
+
+	    			<td class="nanda"><img  id="cg" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cg').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ch" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ch').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ci" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ci').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cj" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cj').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ck" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ck').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cl" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cl').src='green.png'"></td>
+	    		</tr>
+
+	    		<tr>
+	    			<td style="color: white; text-align: center; padding: 10px;">I</td>
+	    			<td style="width: 10px;"></td>
+	    			<td class="nanda"><img  id="cm" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cm').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cn" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cn').src='green.png'"></td>
+	    			<td class="nanda"><img  id="co" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('co').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cp" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cp').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cq" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cq').src='green.png'"></td>
+	    			<td style="width: 30px;"></td>
+
+	    			<td class="nanda"><img  id="cr" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cr').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cs" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cs').src='green.png'"></td>
+	    			<td class="nanda"><img  id="ct" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('ct').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cu" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cu').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cv" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cv').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cw" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cw').src='green.png'"></td>
+	    		</tr>
+
+	    		<tr>
+	    			<td style="color: white; text-align: center; padding: 10px;">J</td>
+	    			<td style="width: 10px;"></td>
+	    			<td class="nanda"><img  id="cx" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cx').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cy" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cy').src='green.png'"></td>
+	    			<td class="nanda"><img  id="cz" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('cz').src='green.png'"></td>
+	    			<td class="nanda"><img  id="da" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('da').src='green.png'"></td>
+	    			<td class="nanda"><img  id="db" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('db').src='green.png'"></td>
+	    			<td style="width: 30px;"></td>
+
+	    			<td class="nanda"><img  id="dc" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('dc').src='green.png'"></td>
+	    			<td class="nanda"><img  id="dd" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('dd').src='green.png'"></td>
+	    			<td class="nanda"><img  id="de" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('de').src='green.png'"></td>
+	    			<td class="nanda"><img  id="df" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('df').src='green.png'"></td>
+	    			<td class="nanda"><img  id="dg" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('dg').src='green.png'"></td>
+	    			<td class="nanda"><img  id="dh" src="white.png" style="height:30px;width:40px;" onclick="document.getElementById('dh').src='green.png'"></td>
+	    		</tr>
+
+	    		
+	    	</table>
+	    </div>
+	    </div>
+	</center>
+
+	</body>
+	</html>
